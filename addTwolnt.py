@@ -5,9 +5,14 @@ def add(a,b):
 def main():
     import sys
     print(sys.argv)
+    i=(len(sys.argv)-1)
+    print("le nombre d'arguments : ",i)
 
-    x = int (sys.argv[1])
-    y = int (sys.argv[2])
+    if (i==2):
+          x = int (sys.argv[1])
+          y = int (sys.argv[2])
+          print(add(x,y))
+    else:
+          print("erreur : veuillez inserer que deux arguments")
 
-    print(add(x,y))
 main()
